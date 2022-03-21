@@ -673,7 +673,7 @@ function volumetricCart(dataId, pId, qty, slug){
         $("#cart-panel a[href='/uye-girisi?next=order2'], #cart-panel a[href='/order/step2']").attr("href", "javascript:void(0);").attr("id", "complateShopping");
         $("#checkout-cart-panel #cart-summary [data-selector='submit-button']").removeAttr("data-selector").attr("id", "submit-button");
 
-        $.get("https://www.modalife.furniture/dosya/countries.json", function(response){
+        $.get("***/dosya/countries.json", function(response){
             
             data.cargoProductId = response[0]["Cargo Product Id"];
             data.cargoId = response[0]["Cargo Id"];
